@@ -1,8 +1,11 @@
 window.addEventListener("load", function () {
   var popup = document.getElementById("popup");
 
-  if (this.window.screen && this.window.screen.width < 1024) return;
-  
+  if (window.screen && window.screen.width < 1024) {
+    console.log(`Window width too small, no popup. ${window.screen.width}px`)
+    return;
+  }
+
   // display popup after 3 seconds
   setTimeout(showPopup, 3000);
 
