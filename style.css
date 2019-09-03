@@ -17,7 +17,7 @@
   box-shadow: 10px 10px 30px 10px rgba(0,0,0,0.75);
 }
 iframe {
-  height: 600px;
+  height: inherit;
   width: 810px;
   border: none;
   overflow: hidden;
