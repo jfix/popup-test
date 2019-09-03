@@ -1,6 +1,8 @@
 window.addEventListener("load", function () {
   var popup = document.getElementById("popup");
 
+  if (this.window.screen && this.window.screen.width < 1024) return;
+  
   // display popup after 3 seconds
   setTimeout(showPopup, 3000);
 
