@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Test for survey popups</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <p>After five seconds, a popup with a survey question should be shown.</p>
+    <div class="centered bordered box" id="popup">
+      <div id="close">&times;</div>
+      <!-- your checkbox survey would go into data-src -->
+      <iframe src="about:blank" 
+              data-src="https://survey2018.oecd.org/Survey.aspx?s=0f083fb30cc34e04977ae35d45ce3258">
+      </iframe>
+    </div>
+  </body>
+</html>
