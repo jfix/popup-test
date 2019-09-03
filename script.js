@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", function () {
   var popup = document.getElementById("popup");
 
   // display popup after 3 seconds
@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   // mechanics to dismiss popup when clicking
   // close button or anywhere outside it.
   popup.addEventListener("click", dismissPopup);
-  window.addEventListener("click", event => {
+  window.addEventListener("click", function (event) {
     if (event.target !== popup) {
       dismissPopup();
     }
